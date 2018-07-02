@@ -13,10 +13,13 @@
     <h1>Best Score
       <p id="best-score"></p>
     </h1>
+
+    <h1 class="time-left"></h1>
+
     <h1>Whack-a-mole!
       <div class="final-score">
         <span class="score" name="score">0</span>
-        <input type="submit" onClick="startGame()" value="Start!" id="click"></input>
+        <input type="submit" onClick="startGame(); timer(15);" value="Start!" id="click"></input>
       </div>
     </h1>
   </div>
