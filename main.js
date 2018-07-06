@@ -60,28 +60,37 @@ function randomHole(holes) {
   return hole;
 }
 
-function appear() {
-  const time = randomTime(200, 1000);
-  const hole = randomHole(holes);
-  hole.classList.add("up");
-  setTimeout(() => {
-    hole.classList.remove("up");
-    if (!timeUp) peep();
-  }, time);
-}
 function peep() {
   if (leaderBoard >= 0 && leaderBoard <= 10) {
     let level = "LvL 1";
     localStorage.setItem("lvl", JSON.stringify(level));
-    appear();
+    const time = randomTime(200, 1000);
+    const hole = randomHole(holes);
+    hole.classList.add("up");
+    setTimeout(() => {
+      hole.classList.remove("up");
+      if (!timeUp) peep();
+    }, time);
   } else if (leaderBoard > 10 && leaderBoard <= 14) {
     let level = "LvL 2";
     localStorage.setItem("lvl", JSON.stringify(level));
-    appear();
+    const time = randomTime(200, 800);
+    const hole = randomHole(holes);
+    hole.classList.add("up");
+    setTimeout(() => {
+      hole.classList.remove("up");
+      if (!timeUp) peep();
+    }, time);
   } else if (leaderBoard > 14) {
     let level = "LvL 3";
     localStorage.setItem("lvl", JSON.stringify(level));
-    appear();
+    const time = randomTime(200, 700);
+    const hole = randomHole(holes);
+    hole.classList.add("up");
+    setTimeout(() => {
+      hole.classList.remove("up");
+      if (!timeUp) peep();
+    }, time);
   }
 }
 function startGame() {
