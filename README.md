@@ -6,7 +6,7 @@ Features I added:
 
 1) Show your Best Score
 
-2) Local storage to keep tracking of your best score
+2) Local storage to keep tracking of your best score and current lvl
 
 3) Countdown timer
 
