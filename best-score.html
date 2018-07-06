@@ -6,27 +6,21 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Best Score</title>
-   <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
-   <style>
-      .em {
-         width: 1em;
-      }
-   </style>
 </head>
 
 <body>
-   <h1>Best Score</h1>
-   <p id="best-score"></p>
-   <h1>Play Again!
+   <section class="play-again">
+      <h1>Best Score</h1>
+      <span id="best-score"></span>
+      <h1>Current Level</h1>
+      <span id="current-lvl"></span>
+
+      <h1>Play Again!</h1>
       <div class="final-score">
-         <span class="score" name="score" onClick="location.href = 'index.html'">
-            <i class="em em-hammer"></i>
-         </span>
          <input type="submit" onClick="location.href = 'index.html'" value="Start!" id="click"></input>
       </div>
-   </h1>
+   </section>
    <script type="text/javascript" src="main.js"></script>
 </body>
 

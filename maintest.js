@@ -9,9 +9,11 @@ let currentScore;
 let level = localStorage.getItem("lvl") || "Play to select your lvl";
 let leaderBoard = localStorage.getItem("items") || 0;
 let bestScore = document.getElementById("best-score");
+let currentLvl = document.getElementById("current-lvl");
 
 //! to print the best score before the game starts
-bestScore.innerHTML = level + leaderBoard;
+bestScore.innerHTML = leaderBoard;
+currentLvl.innerHTML = level;
 
 //!for Timer
 let countdown;

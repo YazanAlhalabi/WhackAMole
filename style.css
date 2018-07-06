@@ -1,39 +1,46 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
-  background: #ffc600;
+  background: -webkit-linear-gradient(to left, #799f0c, #ffe000);
+  background: linear-gradient(to left, #799f0c, #ffe000);
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+@font-face {
+  font-family: "Sansation Bold";
+  src: url("Sansation_Bold.ttf");
 }
 
 body {
   padding: 0;
-  margin:0;
-  font-family: 'Amatic SC', cursive;
+  margin: 0;
+  font-family: "Sansation Bold", cursive;
 }
 
-h1 {
+.title {
+  margin: 40px auto;
   text-align: center;
   font-size: 7rem;
-  margin-bottom: 0;
-  margin-top: 0;
 }
-
-.score {
-  background:rgba(255,255,255,0.2);
-  padding:0 3rem;
-  line-height:1;
-  border-radius:1rem;
+.score,
+#current-lvl,
+#best-score {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0 2rem;
+  line-height: 1;
+  border-radius: 1rem;
+  font-size: 3rem;
 }
 
 .game {
-  width:600px;
-  height:400px;
-  display:flex;
-  flex-wrap:wrap;
-  margin: 40px auto;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .hole {
@@ -45,55 +52,92 @@ h1 {
 .hole:after {
   display: block;
   background: url(dirt.svg) bottom center no-repeat;
-  background-size:contain;
-  content:'';
+  background-size: contain;
+  content: "";
   width: 100%;
-  height:70px;
+  height: 70px;
   position: absolute;
   z-index: 2;
-  bottom:-30px;
+  bottom: -30px;
 }
 
 .mole {
-  background:url('mole.svg') bottom center no-repeat;
-  background-size:60%;
+  background: url("mole.svg") bottom center no-repeat;
+  background-size: 60%;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
-  transition:all 0.4s;
+  transition: all 0.4s;
 }
 
 .hole.up .mole {
-  top:0;
-}
-
-#best-score {
-  margin-top: 0;
-  font-weight: bold;
-  font-size: 100px;
-  text-align: center;
+  top: 0;
 }
 
 #click {
+  margin-top: 25px;
   color: #ff9900;
   background: none;
   font-weight: bold;
   border: none;
   font-size: 8rem;
+  text-shadow: 4px 4px 12px black;
+  font-family: "Sansation Bold", cursive;
+  text-transform: uppercase;
 }
 
-.wrap {
-  height: 200px;
+.circle {
+  border: 2px solid black;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  padding-top: 30px;
+}
+
+.wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.circle {
-    border: 2px solid black;
-    border-radius: 50%;
-    width: 125px;
-    margin-top: 67px;
-    padding-top: 20px;
+.score-wrap {
+  display: inline-block;
+}
+.score-wrap h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.leader-board {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.time-left {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 10px;
+  position: absolute;
+  top: 0;
+  left: 5%;
+}
+
+/*------- For The best-score Page --------*/
+.play-again {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 25vh auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 30px;
+  width: 25%;
+}
+
+.play-again h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
 }

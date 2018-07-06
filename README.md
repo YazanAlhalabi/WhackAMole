@@ -1,6 +1,6 @@
 # WhackAMole
 
-its a game from JS30 challenges!
+inspired by Wes Bos from JS30 challenges!
 
 Features I added:
 
@@ -10,9 +10,13 @@ Features I added:
 
 3) Countdown timer
 
-Features I will be adding later:
+4) Extra Lvls that means faster Mole!
 
-1) Extra Lvls that means faster Mole!
+-------
+
+I will be adding more features later!
+
+
 
 
 

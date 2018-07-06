@@ -4,47 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <title>Whack A Mole!</title>
-  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="wrap">
-    <h1>Best Score
-      <p id="best-score"></p>
-    </h1>
+  <h1 class="title">Whack-A-Mole!</h1>
+  <h1 class="time-left"></h1>
 
-    <h1 class="time-left"></h1>
-
-    <h1>Whack-a-mole!
-      <div class="final-score">
+  <div class="wrapper">
+    <div class="game">
+      <div class="hole hole1">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole2">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole3">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole4">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole5">
+        <div class="mole"></div>
+      </div>
+      <div class="hole hole6">
+        <div class="mole"></div>
+      </div>
+    </div>
+    <section class="leader-board">
+      <div class="score-wrap">
+        <h1>Current Score</h1>
         <span class="score" name="score">0</span>
+        <h1>Best Score</h1>
+        <span id="best-score"></span>
+        <h1>Current Level</h1>
+        <span id="current-lvl"></span>
+      </div>
+      <div class="start-game">
         <input type="submit" onClick="startGame(); timer(15);" value="Start!" id="click"></input>
       </div>
-    </h1>
+    </section>
   </div>
-
-  <div class="game">
-    <div class="hole hole1">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole2">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole3">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole4">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole5">
-      <div class="mole"></div>
-    </div>
-    <div class="hole hole6">
-      <div class="mole"></div>
-    </div>
-  </div>
-
   <script type="text/javascript" src="main.js"></script>
 </body>
 
