@@ -1,6 +1,6 @@
 # WhackAMole
 
-inspired by Wes Bos from JS30 challenges!
+Inspired by Wes Bos from JS30 challenges!
 
 Features I added:
 
