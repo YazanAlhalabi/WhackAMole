@@ -14,7 +14,7 @@ Features I added:
 
 -------
 
-I will be adding more features later!
+More features to come!
 
 
 
